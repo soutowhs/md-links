@@ -1,0 +1,25 @@
+{
+    "name": "mdlinksfind",
+    "version": "1.0.0",
+    "description": "O intuito dessa lib é procurar dentro de um diretório, todos os arquivos markdown e validar a condição de funcionalidade dos links dos mesmos.",
+    "type": "module",
+    "main": "./cli.js",
+    "bin": {
+        "mdlinksfind": "./cli.js"
+    },
+    "preferGlobal": true,
+    "scripts": {
+        "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js ./test",
+        "cli": "node cli.js"
+    },
+    "keywords": ["markdown", "URL", "Links", "Diretório"],
+    "author": "Wayne Souto (https://github.com/soutowhs)",
+    "license": "ISC",
+    "dependencies": {
+        "chalk": "^5.0.1",
+        "node-fetch": "^3.2.3"
+    },
+    "devDependencies": {
+        "jest": "^28.0.1"
+    }
+}
