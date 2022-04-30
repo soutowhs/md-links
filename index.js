@@ -32,7 +32,7 @@ export default async function pegaArquivo(caminhoArquivo) {
             const texto = await fs.promises.readFile(localArquivo, encoding);
             return extraiLinks(texto);
         }));
-        console.log('arquivos', result);
+        console.log('arquivos', arquivos);
         return result;
     } catch (erro) {
         trataErro(erro);
